@@ -84,16 +84,16 @@ var fa = moment.defineLocale('fa', {
         y : 'یک سال',
         yy : '%d سال'
     },
-    preparse: function (string) {
-        return string.replace(/[۰-۹]/g, function (match) {
-            return numberMap[match];
-        }).replace(/،/g, ',');
-    },
-    postformat: function (string) {
-        return string.replace(/\d/g, function (match) {
-            return symbolMap[match];
-        }).replace(/,/g, '،');
-    },
+    // preparse: function (string) {
+    //     return string.replace(/[۰-۹]/g, function (match) {
+    //         return numberMap[match];
+    //     }).replace(/،/g, ',');
+    // },
+    // postformat: function (string) {
+    //     return string.replace(/\d/g, function (match) {
+    //         return symbolMap[match];
+    //     }).replace(/,/g, '،');
+    // },
     ordinalParse: /\d{1,2}م/,
     ordinal : '%dم',
     week : {
